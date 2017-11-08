@@ -1,0 +1,191 @@
+/* Reset Bootstrap */
+
+.container {
+    width: 1024px;
+}
+
+/* Styles */
+
+header {
+    border-top: 3px solid #008392;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+header #profile-description h1 {
+    color: #008392;
+    font-family: BebasNeueBook;
+    font-size: 45px;
+    font-weight: 400;
+    margin: 0 0 30px;
+}
+
+header #profile-description p {
+    color: #211915;
+    font-family: HelveticaLTStd-LightCond;
+    font-size: 19px;
+    line-height: 25px;
+}
+
+header #profile-picture {
+    background-color: #008392;
+    border: 3px solid #008392;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+header #profile-picture img {
+    transition: all .3s;
+}
+
+header #profile-picture img:hover {
+    transform: scale(1.1);
+}
+
+#main {
+
+}
+
+#main #abilities,
+#main #academic-training,
+#main #experiences,
+#main #family-references,
+#main #personal-references,
+#main #success-stories {
+    margin-bottom: 30px;
+}
+
+#main #abilities .ability {
+    margin-bottom: 15px;
+}
+
+#main #academic-training .academic,
+#main #contact-us .contact,
+#main #family-references .reference,
+#main #experiences .experience,
+#main #personal-references .reference,
+#main #success-stories .success {
+    border-left: 3px solid #008392;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+#main #abilities .ability .ability-title,
+#main #academic-training .academic .academic-title,
+#main #contact-us .contact .contact-title,
+#main #experiences .experience .experience-title,
+#main #family-references .reference .reference-title,
+#main #personal-references .reference .reference-title,
+#main #success-stories .success .success-title {
+    color: #211915;
+    font-family: BebasNeueBook;
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+
+#main #academic-training .academic .academic-title b,
+#main #contact-us .contact .contact-title b,
+#main #family-references .reference .reference-title b,
+#main #experiences .experience .experience-title b,
+#main #personal-references .reference .reference-title b,
+#main #success-stories .success .success-title b {
+    display: block;
+    color: #211915;
+    font-family: BebasNeueRegular;
+    font-size: 25px;
+}
+
+#main #abilities .ability .ability-title {
+    font-family: BebasNeueRegular;
+}
+
+#main #abilities .ability .ability-title span {
+    font-family: BebasNeueBook;
+    font-size: 25px;
+}
+
+#main #abilities .ability .ability-bar {
+    background-color: #969391;
+    height: 15px;
+}
+
+#main #abilities .ability .ability-bar .ability-bar-percentage {
+    background-color: #008392;
+    height: 100%;
+}
+
+#main #contact-us .contact .contact-email {
+    display: inline-block;
+    color: #211915;
+    font-family: BebasNeueRegular;
+    font-size: 25px;
+    margin-top: -10px;
+}
+
+#main #contact-us .contact .contact-email:hover {
+    text-decoration: none;
+}
+
+#main #experiences .experience .experience-description,
+#main #success-stories .success .success-description {
+    color: #211915;
+    font-family: HelveticaLTStd-LightCond;
+    font-size: 18px;
+    margin: 0;
+    text-align: justify;
+}
+
+#main #family-references .reference .reference-phone,
+#main #personal-references .reference .reference-phone {
+    color: #211915;
+    font-family: HelveticaLTStd-LightCond;
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+#main #success-stories .success .success-description a {
+    color: #008392;
+}
+
+#main #success-stories .success .success-description a:hover {
+    text-decoration: none;
+}
+
+#main .titles {
+    color: #008392;
+    font-family: BebasNeueBook;
+    font-size: 40px;
+    margin: 0 0 15px;
+}
+
+#main .titles .glyphicon {
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+footer {
+    border-bottom: 3px solid #008392;
+}
+
+footer #main-redes {
+    margin-top: 25px;
+    text-align: center;
+}
+
+footer #main-redes li {
+    display: inline-block;
+    margin: 0 15px;
+    vertical-align: top;
+}
+
+footer #main-redes li a {
+    color: #008392;
+    font-family: HelveticaLTStd-LightCond;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+footer #main-redes li a:hover {
+    text-decoration: none;
+}
