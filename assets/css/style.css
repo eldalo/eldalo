@@ -1,9 +1,3 @@
-/* Reset Bootstrap */
-
-.container {
-    width: 1024px;
-}
-
 /* Styles */
 
 header {
@@ -121,9 +115,11 @@ header #profile-picture img:hover {
     font-family: BebasNeueRegular;
     font-size: 25px;
     margin-top: -10px;
+    transition: color .5s ease-in-out;
 }
 
 #main #contact-us .contact .contact-email:hover {
+    color: #008392;
     text-decoration: none;
 }
 
@@ -146,9 +142,11 @@ header #profile-picture img:hover {
 
 #main #success-stories .success .success-description a {
     color: #008392;
+    transition: color .5s ease-in-out;
 }
 
 #main #success-stories .success .success-description a:hover {
+    color: #211915;
     text-decoration: none;
 }
 
@@ -184,8 +182,28 @@ footer #main-redes li a {
     font-family: HelveticaLTStd-LightCond;
     font-size: 20px;
     text-transform: uppercase;
+    transition: color .5s ease-in-out;
 }
 
 footer #main-redes li a:hover {
+    color: #211915;
     text-decoration: none;
+}
+
+/* Styles query */
+
+@media handheld, only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media handheld, only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media handheld, only screen and (max-width: 736px) {
+
+}
+
+@media handheld, only screen and (max-width: 414px) {
+
 }
