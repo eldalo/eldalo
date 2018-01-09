@@ -1,5 +1,10 @@
 /* Styles */
 
+body {
+    font-family: HelveticaLTStd-LightCond;
+    font-size: 16px;
+}
+
 header {
     border-top: 3px solid #008392;
     padding-bottom: 30px;
@@ -16,12 +21,11 @@ header #profile-description h1 {
 
 header #profile-description p {
     color: #211915;
-    font-family: HelveticaLTStd-LightCond;
     font-size: 19px;
     line-height: 25px;
 }
 
-header #profile-picture {
+header #profile-picture figure {
     background-color: #008392;
     border: 3px solid #008392;
     cursor: pointer;
@@ -35,10 +39,6 @@ header #profile-picture img {
 
 header #profile-picture img:hover {
     transform: scale(1.1);
-}
-
-#main {
-
 }
 
 #main #abilities,
@@ -126,7 +126,6 @@ header #profile-picture img:hover {
 #main #experiences .experience .experience-description,
 #main #success-stories .success .success-description {
     color: #211915;
-    font-family: HelveticaLTStd-LightCond;
     font-size: 18px;
     margin: 0;
     text-align: justify;
@@ -135,7 +134,6 @@ header #profile-picture img:hover {
 #main #family-references .reference .reference-phone,
 #main #personal-references .reference .reference-phone {
     color: #211915;
-    font-family: HelveticaLTStd-LightCond;
     font-size: 20px;
     margin-top: -10px;
 }
@@ -179,7 +177,6 @@ footer #main-redes li {
 
 footer #main-redes li a {
     color: #008392;
-    font-family: HelveticaLTStd-LightCond;
     font-size: 20px;
     text-transform: uppercase;
     transition: color .5s ease-in-out;
@@ -190,20 +187,38 @@ footer #main-redes li a:hover {
     text-decoration: none;
 }
 
+
 /* Styles query */
 
-@media handheld, only screen and (min-width: 768px) and (max-width: 1024px) {
-
+@media handheld,
+only screen and (min-width: 768px) and (max-width: 1024px) {
+    header #profile-description h1 {
+        margin-bottom: 10px;
+    }
 }
 
-@media handheld, only screen and (min-width: 768px) and (max-width: 1023px) {
-
+@media handheld,
+only screen and (min-width: 768px) and (max-width: 1023px) {
+    header #profile-description h1 {
+        margin-bottom: 20px;
+    }
 }
 
-@media handheld, only screen and (max-width: 736px) {
-
+@media handheld,
+only screen and (max-width: 736px) {
+    header #profile-description h1 {
+        margin: 15px 0;
+        text-align: center;
+    }
+    header #profile-picture {
+        margin-left: 25%;
+    }
 }
 
-@media handheld, only screen and (max-width: 414px) {
-
+@media handheld,
+only screen and (max-width: 414px) {
+    header #profile-picture {
+        margin-left: 0;
+        width: 100%;
+    }
 }
