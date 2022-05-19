@@ -1,224 +1,185 @@
-/* Styles */
+:root {
+  --default-color-yellow: #a38030;
+  --default-color-gray-light: #9ca1a2;
+  --default-color-gray: #7e7b75;
+  --default-font-title: BebasNeueBook;
+  --default-font-subtitle: BebasNeueRegular;
+  --default-font-text: HelveticaLTStd-LightCond;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  text-rendering: optimizelegibility;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+  scroll-behavior: smooth;
+}
 
 body {
-    font-family: HelveticaLTStd-LightCond;
-    font-size: 16px;
+  font-family: var(--default-font-text);
+  font-size: 16px;
 }
 
-header {
-    border-top: 3px solid #008392;
-    padding-bottom: 30px;
-    padding-top: 30px;
+.profile {
+  background-color: var(--default-color-yellow);
+  margin-top: 120px;
 }
 
-header #profile-description h1 {
-    color: #008392;
-    font-family: BebasNeueBook;
-    font-size: 45px;
-    font-weight: 400;
-    margin: 0 0 30px;
+.profile .profile__thumb {
+  border: 15px solid white;
+  height: 400px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-top: -35px;
+  position: relative;
+  right: -30px;
+  top: -35px;
+  width: 400px;
 }
 
-header #profile-description p {
-    color: #211915;
-    font-size: 19px;
-    line-height: 25px;
+.profile .profile__thumb img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-header #profile-picture figure {
-    background-color: #008392;
-    border: 3px solid #008392;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+.profile .profile__card {
+  padding: 0 30px 25px;
 }
 
-header #profile-picture img {
-    transition: all .3s;
+.profile .profile__name {
+  color: white;
+  font-family: var(--default-font-title);
+  font-size: 36px;
+  letter-spacing: 0.3px;
+  line-height: 36px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-header #profile-picture img:hover {
-    transform: scale(1.1);
+.profile .profile__profession {
+  color: white;
+  font-family: var(--default-font-subtitle);
+  font-size: 28px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-#main #abilities,
-#main #academic-training,
-#main #experiences,
-#main #family-references,
-#main #personal-references,
-#main #success-stories {
-    margin-bottom: 30px;
+.intro {
+  margin-top: 45px;
 }
 
-#main #abilities .ability {
-    margin-bottom: 15px;
+.intro .intro__title {
+  color: var(--default-color-gray);
+  font-family: var(--default-font-subtitle);
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 40px;
 }
 
-#main #academic-training .academic,
-#main #contact-us .contact,
-#main #family-references .reference,
-#main #experiences .experience,
-#main #personal-references .reference,
-#main #success-stories .success {
-    border-left: 3px solid #008392;
-    margin-bottom: 15px;
-    padding: 0 15px;
+.intro .intro__description {
+  color: var(--default-color-gray-light);
+  font-family: var(--default-font-title);
+  font-size: 32px;
+  line-height: 34px;
+  margin-bottom: 0;
 }
 
-#main #abilities .ability .ability-title,
-#main #academic-training .academic .academic-title,
-#main #contact-us .contact .contact-title,
-#main #experiences .experience .experience-title,
-#main #family-references .reference .reference-title,
-#main #personal-references .reference .reference-title,
-#main #success-stories .success .success-title {
-    color: #211915;
-    font-family: BebasNeueBook;
-    font-size: 30px;
-    margin: 0 0 10px;
+.intro .intro__sep {
+  background-color: var(--default-color-yellow);
+  border: none;
+  height: 1px;
+  width: 100%;
 }
 
-#main #academic-training .academic .academic-title b,
-#main #contact-us .contact .contact-title b,
-#main #family-references .reference .reference-title b,
-#main #experiences .experience .experience-title b,
-#main #personal-references .reference .reference-title b,
-#main #success-stories .success .success-title b {
-    display: block;
-    color: #211915;
-    font-family: BebasNeueRegular;
-    font-size: 25px;
+.information {
+  margin-bottom: 45px;
+  margin-top: 20px;
 }
 
-#main #abilities .ability .ability-title {
-    font-family: BebasNeueRegular;
+.information .information__title {
+  color: var(--default-color-yellow);
+  font-family: var(--default-font-subtitle);
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 30px;
 }
 
-#main #abilities .ability .ability-title span {
-    font-family: BebasNeueBook;
-    font-size: 25px;
+.information .information__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-#main #abilities .ability .ability-bar {
-    background-color: #969391;
-    height: 15px;
+.information .information__item {
+  color: var(--default-color-gray-light);
+  font-family: var(--default-font-text);
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 15px;
 }
 
-#main #abilities .ability .ability-bar .ability-bar-percentage {
-    background-color: #008392;
-    height: 100%;
+.information .information__item b {
+  color: var(--default-color-gray);
+  display: block;
+  font-family: var(--default-font-title);
+  font-size: 24px;
+  line-height: 26px;
 }
 
-#main #contact-us .contact .contact-email {
-    display: inline-block;
-    color: #211915;
-    font-family: BebasNeueRegular;
-    font-size: 25px;
-    margin-top: -10px;
-    transition: color .5s ease-in-out;
+.contact-us {
+  color: var(--default-color-yellow);
+  display: block;
+  font-family: var(--default-font-title);
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+  position: relative;
 }
 
-#main #contact-us .contact .contact-email:hover {
-    color: #008392;
-    text-decoration: none;
+.contact-us::after,
+.contact-us::before {
+  background-color: var(--default-color-yellow);
+  display: block;
+  content: '';
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 25%;
 }
 
-#main #experiences .experience .experience-description,
-#main #success-stories .success .success-description {
-    color: #211915;
-    font-size: 18px;
-    margin: 0;
-    text-align: justify;
+.contact-us::after {
+  left: inherit;
+  right: 0;
 }
 
-#main #family-references .reference .reference-phone,
-#main #personal-references .reference .reference-phone {
-    color: #211915;
-    font-size: 20px;
-    margin-top: -10px;
+.contact-us a {
+  color: var(--default-color-yellow);
+  transition: all .15s ease-in-out;
 }
 
-#main #success-stories .success .success-description a {
-    color: #008392;
-    transition: color .5s ease-in-out;
+.contact-us a:hover {
+  color: var(--default-color-gray);
+  text-decoration: none;
 }
 
-#main #success-stories .success .success-description a:hover {
-    color: #211915;
-    text-decoration: none;
+.redes {
+  margin-bottom: 25px;
 }
 
-#main .titles {
-    color: #008392;
-    font-family: BebasNeueBook;
-    font-size: 40px;
-    margin: 0 0 15px;
+.redes a {
+  transition: all .25s ease-in-out;
 }
 
-#main .titles .glyphicon {
-    font-size: 25px;
-    vertical-align: middle;
-}
-
-footer {
-    border-bottom: 3px solid #008392;
-}
-
-footer #main-redes {
-    margin-top: 25px;
-    text-align: center;
-}
-
-footer #main-redes li {
-    display: inline-block;
-    margin: 0 15px;
-    vertical-align: top;
-}
-
-footer #main-redes li a {
-    color: #008392;
-    font-size: 20px;
-    text-transform: uppercase;
-    transition: color .5s ease-in-out;
-}
-
-footer #main-redes li a:hover {
-    color: #211915;
-    text-decoration: none;
-}
-
-
-/* Styles query */
-
-@media handheld,
-only screen and (min-width: 768px) and (max-width: 1024px) {
-    header #profile-description h1 {
-        margin-bottom: 10px;
-    }
-}
-
-@media handheld,
-only screen and (min-width: 768px) and (max-width: 1023px) {
-    header #profile-description h1 {
-        margin-bottom: 20px;
-    }
-}
-
-@media handheld,
-only screen and (max-width: 736px) {
-    header #profile-description h1 {
-        margin: 15px 0;
-        text-align: center;
-    }
-    header #profile-picture {
-        margin-left: 25%;
-    }
-}
-
-@media handheld,
-only screen and (max-width: 414px) {
-    header #profile-picture {
-        margin-left: 0;
-        width: 100%;
-    }
+.redes a:hover {
+  opacity: 0.7;
+  text-decoration: none;
 }
