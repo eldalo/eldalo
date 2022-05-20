@@ -2,6 +2,7 @@
   --default-color-yellow: #a38030;
   --default-color-gray-light: #9ca1a2;
   --default-color-gray: #7e7b75;
+  --default-color-white: #ededed;
   --default-font-title: BebasNeueBook;
   --default-font-subtitle: BebasNeueRegular;
   --default-font-text: HelveticaLTStd-LightCond;
@@ -15,31 +16,30 @@
 }
 
 html {
+  background-color: var(--default-color-white);
   font-size: 16px;
   height: 100%;
   scroll-behavior: smooth;
 }
 
 body {
+  background-color: var(--default-color-white);
   font-family: var(--default-font-text);
   font-size: 16px;
 }
 
 .profile {
   background-color: var(--default-color-yellow);
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 .profile .profile__thumb {
-  border: 15px solid white;
-  height: 400px;
+  border: 10px solid white;
+  left: -10px;
   margin-bottom: 0;
-  margin-left: auto;
-  margin-top: -35px;
   position: relative;
-  right: -30px;
   top: -35px;
-  width: 400px;
+  width: 90%;
 }
 
 .profile .profile__thumb img {
@@ -49,15 +49,15 @@ body {
 }
 
 .profile .profile__card {
-  padding: 0 30px 25px;
+  padding: 0 15px 25px;
 }
 
 .profile .profile__name {
   color: white;
   font-family: var(--default-font-title);
-  font-size: 36px;
+  font-size: 30px;
   letter-spacing: 0.3px;
-  line-height: 36px;
+  line-height: 30px;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -87,8 +87,8 @@ body {
 .intro .intro__description {
   color: var(--default-color-gray-light);
   font-family: var(--default-font-title);
-  font-size: 32px;
-  line-height: 34px;
+  font-size: 28px;
+  line-height: 30px;
   margin-bottom: 0;
 }
 
@@ -100,7 +100,7 @@ body {
 }
 
 .information {
-  margin-bottom: 45px;
+  margin-bottom: 4 5px;
   margin-top: 20px;
 }
 
@@ -141,6 +141,8 @@ body {
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
+  margin-top: 25px;
+  padding-top: 25px;
   position: relative;
 }
 
@@ -152,18 +154,13 @@ body {
   height: 1px;
   position: absolute;
   left: 0;
-  top: 8px;
-  width: 25%;
-}
-
-.contact-us::after {
-  left: inherit;
-  right: 0;
+  top: 0;
+  width: 100%;
 }
 
 .contact-us a {
   color: var(--default-color-yellow);
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .contact-us a:hover {
@@ -176,10 +173,53 @@ body {
 }
 
 .redes a {
-  transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .redes a:hover {
   opacity: 0.7;
   text-decoration: none;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .profile {
+    margin-top: 120px;
+  }
+
+  .profile .profile__thumb {
+    border: 15px solid white;
+    height: 400px;
+    left: inherit;
+    margin-left: auto;
+    margin-top: -35px;
+    right: -30px;
+    top: -35px;
+    width: 400px;
+  }
+
+  .profile .profile__card {
+    padding: 0 30px 25px;
+  }
+
+  .profile .profile__name {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .contact-us {
+    margin-top: 25px;
+    padding-top: 0;
+  }
+
+  .contact-us::after,
+  .contact-us::before {
+    top: 8px;
+    width: 25%;
+  }
+
+  .contact-us::after {
+    left: inherit;
+    right: 0;
+  }
 }
