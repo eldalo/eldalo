@@ -1,9 +1,4 @@
 :root {
-  --default-color-green: #3aaca8;
-  --default-color-green-dark: #567b83;
-  --default-color-green-light: #a2d5ab;
-  --default-color-green-thin: #e5edc3;
-
   --default-font-title: BebasNeueBook;
   --default-font-subtitle: BebasNeueRegular;
   --default-font-text: HelveticaLTStd-LightCond;
@@ -17,39 +12,42 @@
 }
 
 html {
-  background-color: var(--default-green-thin);
+  background-color: black;
   font-size: 16px;
   height: 100%;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--default-green-thin);
+  background-color: black;
   font-family: var(--default-font-text);
   font-size: 16px;
 }
 
 .profile {
-  background-color: var(--default-color-green-light);
+  background-color: white;
+  border: 2px solid white;
   margin-top: 50px;
 }
 
 .profile .profile__thumb {
   background-color: white;
-  border: 1px solid var(--default-color-green-light);
+  border: 1px solid black;
   left: -10px;
   margin-bottom: 0;
-  padding: 10px;
+  padding: 20px;
   position: relative;
   top: -35px;
   width: 90%;
 }
 
 .profile .profile__thumb img {
+  border: 1px solid black;
   height: 100%;
   object-fit: cover;
   object-position: top;
   width: 100%;
+  filter: grayscale(100%);
 }
 
 .profile .profile__card {
@@ -57,7 +55,7 @@ body {
 }
 
 .profile .profile__name {
-  color: var(--default-color-green-dark);
+  color: black;
   font-family: var(--default-font-title);
   font-size: 30px;
   letter-spacing: 0.3px;
@@ -67,7 +65,7 @@ body {
 }
 
 .profile .profile__profession {
-  color: var(--default-color-green-dark);
+  color: black;
   font-family: var(--default-font-subtitle);
   font-size: 28px;
   letter-spacing: 1px;
@@ -81,7 +79,7 @@ body {
 }
 
 .intro .intro__title {
-  color: var(--default-color-green);
+  color: white;
   font-family: var(--default-font-subtitle);
   font-size: 40px;
   letter-spacing: 1px;
@@ -89,7 +87,7 @@ body {
 }
 
 .intro .intro__description {
-  color: var(--default-color-green-dark);
+  color: white;
   font-family: var(--default-font-title);
   font-size: 28px;
   line-height: 30px;
@@ -97,19 +95,14 @@ body {
 }
 
 .intro .intro__sep {
-  background-color: var(--default-color-green);
+  background-color: white;
   border: none;
   height: 1px;
   width: 100%;
 }
 
-.information {
-  margin-bottom: 4 5px;
-  margin-top: 20px;
-}
-
 .information .information__title {
-  color: var(--default-color-green);
+  color: white;
   font-family: var(--default-font-subtitle);
   font-size: 30px;
   line-height: 34px;
@@ -123,23 +116,25 @@ body {
 }
 
 .information .information__item {
-  color: var(--default-color-green-light);
+  color: white;
   font-family: var(--default-font-text);
   font-size: 20px;
-  line-height: 22px;
-  margin-bottom: 15px;
+  line-height: 28px;
+  margin-bottom: 10px;
 }
 
 .information .information__item b {
-  color: var(--default-color-green-dark);
+  background-color: white;
+  color: black;
   display: block;
   font-family: var(--default-font-title);
   font-size: 24px;
   line-height: 26px;
+  padding-left: 5px;
 }
 
 .contact-us {
-  color: var(--default-color-green-dark);
+  color: white;
   display: block;
   font-family: var(--default-font-title);
   font-size: 22px;
@@ -152,7 +147,7 @@ body {
 
 .contact-us::after,
 .contact-us::before {
-  background-color: var(--default-color-green-dark);
+  background-color: white;
   display: block;
   content: '';
   height: 1px;
@@ -163,12 +158,13 @@ body {
 }
 
 .contact-us a {
-  color: var(--default-color-green-light);
+  color: white;
+  cursor: pointer;
   transition: all 0.15s ease-in-out;
 }
 
 .contact-us a:hover {
-  color: var(--default-color-green);
+  opacity: 0.7;
   text-decoration: none;
 }
 
@@ -188,11 +184,11 @@ body {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .border__left {
-    border-left: 1px solid var(--default-color-green);
+    border-left: 1px solid white;
   }
 
   .border__right {
-    border-right: 1px solid var(--default-color-green);
+    border-right: 1px solid white;
   }
 
   .profile {
